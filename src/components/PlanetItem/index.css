@@ -1,0 +1,7 @@
+.planets-container {
+  display: flex;
+  flex-direction: column;
+}
+.image {
+  width: 100px;
+}
