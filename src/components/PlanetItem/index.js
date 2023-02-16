@@ -1,15 +1,17 @@
 import './index.css'
 
-const Player = props => {
+const PlanetItem = props => {
   const {itemDetails} = props
+  console.log(itemDetails)
+
   const {name, imageUrl, description} = itemDetails
   return (
     <div className="planets-container">
-      <img src={imageUrl} alt={name} className="image" />
+      <img src={imageUrl} alt={`planet ${name}`} className="image" />
       <h1>{name}</h1>
-      <p>{description}</p>
+      <p className="description">{description}</p>
     </div>
   )
 }
 
-export default Player
+export default PlanetItem
